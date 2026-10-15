@@ -61,8 +61,33 @@ for(int i=0; i<n; i++) {
 - Note:  Space complexity depends on a variety of things such as the programming language, the compiler, or even the machine running the algorithm.
 
 ### Big O Notation (Worst case/ Upper bound)
-
+- Given two functions f(n) and g(n), 
+- we say that f(n) is O(g(n)), if there exist constants c > 0 and n0 >= 0 
+- such that f(n) <= c*g(n) for all n >= n0.
+- Used most of the times
+- Ignore lower order terms and constants.
+- Eg: f(n) = 5n<sup>3</sup> + 2n + 1000Logn +  5000 => O(n<sup>3</sup>)
 
 ### Theta Notation (Average case/ both upper and lower bound)
+- Given two functions f(n) and g(n), 
+- The function f(n) is said to be Θ(g(n)), if there are constants c1, c2 > 0 and n0 > 0 
+- such that c1* g(n) ≤ f(n) ≤ c2 * g(n) for all n ≥ n0
+- Θ(g(n)) is a set of values.
+- Provides most precise accuracy.
+- Used more & preferred over Big O, if we can find exact bound.
 
 ### Omega Notation (Best case/ Lower bound)
+- Given two functions g(n) and f(n), 
+- we say that f(n) = Ω(g(n)), if there exists constants c > 0 and n0 >= 0 
+- such that f(n) >= c*g(n) for all n >= n0.
+- Used Less
+
+### Some common Complexity Types
+1. O(log n) => Logarithmic
+2. O(n) => Linear
+3. O(n log n) => Superlinear
+4. O(n<sup>2</sup>) => Quadratic
+5. O(n<sup>3</sup>) => Cubic
+6. O(n^c) => Polynomial (Includes O(n), O(n2), O(n3))
+7. O(c^n) => Exponential 
+8. O(n!) => Factorial

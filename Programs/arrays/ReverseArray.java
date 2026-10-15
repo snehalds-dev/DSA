@@ -1,13 +1,8 @@
-public class ReverseArray {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        reverseArray(arr);
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-    }
+package arrays;
 
-    public static void reverseArray(int[] arr) {
+public class ReverseArray {
+
+    private static void reverseArray(int[] arr) {
         int left = 0;
         int right = arr.length - 1;
 
@@ -20,6 +15,14 @@ public class ReverseArray {
             // Move towards the middle
             left++;
             right--;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        reverseArray(arr);
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
     }
 }
