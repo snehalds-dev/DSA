@@ -2,6 +2,9 @@ package recursion;
 
 public class SumN {
 
+    // Sum of natural numbers using recursion
+    // TC: O(n)
+    // SC: O(n)
     private static int sum(int n) {
         if(n == 1) {
             return 1;
